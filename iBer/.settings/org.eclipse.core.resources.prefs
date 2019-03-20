@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//Test/Case_Gathers.py=UTF-8
+encoding//Test/Common/Driver_Elements.py=UTF-8
+encoding//Test/Common/appium_config.py=UTF-8
+encoding//Test/Common/testImport.py=UTF-8
+encoding//Test/HTMLTestRunner.py=UTF-8
+encoding//Test/Run_Test.py=UTF-8
+encoding//Test/case/iBer_Test01/Product_List.py=UTF-8
+encoding//Test/case/iBer_Test01/iBer_Test_Settings.py=UTF-8
+encoding//Test/logs/logs.py=UTF-8
+encoding//Test/module/iBer/Customer.py=UTF-8
+encoding//Test/module/iBer/Product_List.py=UTF-8
+encoding//Test/module/iBer/Test_Driver_Elements.py=UTF-8
+encoding//Test/module/iBer/Test_H5_iBer.py=UTF-8
+encoding//Test/module/iBer/iBer_MyCertification.py=UTF-8
