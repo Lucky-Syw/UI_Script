@@ -1,4 +1,4 @@
-# coding=UTF-8
+# -*- coding: utf-8 -*-
 '''
 Created on 2018.1.3
 @author: Lucky
@@ -11,19 +11,49 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC,\
     expected_conditions
 import time,os
+import subprocess
 from appium.webdriver.common.touch_action import TouchAction
 
 
 class Driver_Elements:
     
     def __init__(self,driver):
+        print "enter Driver_Elements---------------"
         self.driver = driver
+        self.action = TouchAction(self.driver)
+        self.device_width = self.driver.get_window_size()['width']
+        self.device_height = self.driver.get_window_size()['height']
         self.driver.implicitly_wait(20)
 
+
     def implicitly_Wait(self,time=20):
-        logging.info(u"最大等待时长 %s" %time)
+        logging.info(u"设备：%s最大等待时长 %s" %(self.driver,time))
         self.driver.implicitly_wait(time)
-       
+
+    def is_element_exist(self, element, timeout=1):  #判断给定元素是否存在
+        """判断元素是否存在，存在返回True，不存在返回No
+        增加timeout超时等待，默认为1次，可通过传的参数覆盖
+        :Args:
+            - element - 要查找的元素
+        :Usage:
+            self.tester.is_element_exist('com.nice.main:id/beauty_auto')
+        注：无法判断xpath
+        """
+        count = 0
+        while count < timeout:
+            source = self.driver.page_source
+            logging.error(source)
+            logging.error("((((((((((((((((((((((((((((((((((((((((((((((999990")
+            if element in source:
+                logging.info(u"设备：找到控件: %s" %element)
+                sleep(3)
+                return True
+            else:
+                count += 1
+                time.sleep(1)
+        logging.info(u"设备： 未找到控件: %s" % (element))
+        return False
+
     def touch_Id(self,id):  #通过 id点击元素
         '''
         method explain:通过id点击元素
@@ -38,9 +68,9 @@ class Driver_Elements:
         except:
             logging.warn("except------------touch_Id--%s【异常】"%(id))
             self.take_screenShot("not_%s"%id)
-            assert 'assert touch_Id'
+            assert False
       
-    def find_Element(self,type,value):   #查找元素
+    def find_Element(self,type,value):   #通过ID，name查找元素
         '''
         method explain:查找某个元素
         parameter explain: 【type】 取值的类型包括：id\name\class_name...   【value】根据type的类型给值
@@ -65,10 +95,27 @@ class Driver_Elements:
         except:
             logging.warn("此处已抛异常---------------find_Element【异常】")
             self.take_screenShot("find_Element")
-            assert 'find_Element'
+            #assert False
 
+    def find_xpath_name(self,name): #xpath通过name查找元素
+        '''
+         name: name值
+        '''
+        if self.is_element_exist(name):
+            el = self.driver.find_element_by_xpath("//*[@text='%s']" % name)
+            return el
 
-    def click(self):   #查找到元素进行点击
+    def find_xpath(self,xpath): #xpath通过xpath来定位
+        '''
+         xpath:xpath
+         eg:
+            self.device.find_xpath("//hierarchy/android....")
+        '''
+        sleep(2)
+        el_xpath = self.driver.find_element_by_xpath(xpath)
+        return el_xpath
+
+    def element_click(self):   #查找到元素进行点击
         '''
         method explain:查找某个元素
         parameter explain: 【type】 取值的类型   【value】根据type的类型给值
@@ -78,7 +125,13 @@ class Driver_Elements:
             name_value.click()
         '''
         self.find_Element(type,self.value).click()
-        
+
+    def click(self):
+        return self.driver.click()
+
+    def set_Text(self, text):
+        return self.driver.set_text(text)
+
     def touch_Name(self,name):   #通过 name 点击元素
         '''
         method explain:通过name点击元素
@@ -87,15 +140,10 @@ class Driver_Elements:
             device.touch_Name('测试')
         '''
         logging.info("点击name---------%s【开始】"%(name))
-        try:
-            self.driver.find_element_by_name(name).click()
-            logging.info("点击name---------%s【成功】"%(name))
-        except:
-            logging.warn("except------------touch_Name--%s【异常】"%(name))
-            self.take_screenShot("not_%s"%name)
-            assert 'assert touch_Name'
+        self.driver.find_element_by_name(name).click()
+        logging.info("点击name---------%s【成功】"%(name))
 
-    def back(self,times):   #返回，times给定返回的次数
+    def back(self,times = 1):   #返回，times给定返回的次数
         '''
         method explain:点击back键返回
         parameter explain: 【times】 返回的次数
@@ -120,7 +168,7 @@ class Driver_Elements:
         except:
             logging.warn("except-------未找到包含子串-'%s'的字符串【异常】"%(ContainsName))
             self.take_screenShot("not_%s"%ContainsName)
-            assert 'assert touch_ToNameContains'
+            assert False,'touch_ToNameContains的方法异常'
          
     def touch_ToContentDesc(self,content_desc): #通过content-desc点击
         '''
@@ -136,7 +184,7 @@ class Driver_Elements:
         except:
             logging.warn("except---------ContentDesc异常-%s【异常】"%(content_desc))
             self.take_screenShot("not_%s"%content_desc)
-            assert 'assert touch_ToContentDesc' 
+            assert False,'touch_ToContentDesc方法异常'
                 
     def touch_ClassName(self,Class):  #通过Class点击元素
         '''
@@ -152,7 +200,7 @@ class Driver_Elements:
         except:
             logging.warn("except------------点击touch_ClassName--%s【异常】"%(Class))
             self.take_screenShot("not_%s"%Class)
-            assert 'assert touch_ClassName'
+            assert False,'touch_ClassName 的方法异常'
     
     def touch_ClassNames(self,Class,index):  #通过查找所有相同的Class，根据返回的下标进行点击
         '''
@@ -175,7 +223,7 @@ class Driver_Elements:
         except:
             logging.warn("except------------点击touch_ClassNames--%s【异常】"%(Class))
             self.take_screenShot("not_%s"%Class)
-            assert 'assert touch_ClassNames' 
+            assert False,'touch_ClassNames 的方法异常'
 
     def find_Toast(self,message,timeout=5,poll_frequency = 0.5):  #查找toast值
         '''
@@ -243,7 +291,13 @@ class Driver_Elements:
         b = (float(y)/screen_height)*screen_height
         y1 = int(b)
         self.driver.tap([(x1,y1),(x1,y1)],duration)
-        logging.info("点击坐标------------%s,%s【结束】"%(x,y))
+        logging.info("点击坐标------------%s,%s【结束】" %(x,y))
+
+    def tap_screen_center(self):  #点击屏幕中心
+        x = self.device_width/2
+        y = self.device_height/2
+        logging.info(u"设备：tap center of the screen point at x:%s y:%s" % ( x, y))
+        self.action.tap(None, x, y).perform()
         
     def scroll(self,origin_elN,destination_elN):  #未完成
         '''
@@ -255,7 +309,7 @@ class Driver_Elements:
         logging.info("从元素 --%s--滚动至元素--%s"%(origin_elN,destination_elN))
         origin_elN1 = self.driver.find_element_by_name(origin_elN)
         destination_elN1 = self.driver.find_element_by_name(destination_elN)
-        self.driver.scroll(origin_elN1,destination_elN1)
+        self.driver.scroll(origin_elN1, destination_elN1)
         
     def drag_and_drop(self,origin_elN,destination_elN):  #找到要拖拽的元素origin_elN，然后拖拽到另一个元素destination_elN的位置
         '''
@@ -282,7 +336,7 @@ class Driver_Elements:
         
     def press_keycode(self,keycode):   #点击android的keycode键值
         '''
-        method explain:点击android的keycode键值
+        method explain:仅限Android设备
         parameter explain：keycode 给定的键值
         Usage:
             device.press_keycode('3')  #点击了home键
@@ -294,7 +348,7 @@ class Driver_Elements:
         
     def long_press_keycode(self,keycode):   #长按点击android的keycode键值
         '''
-        method explain:点击android的keycode键值
+        method explain:仅限Android设备
         parameter explain：keycode 给定的键值
         Usage:
             device.long_press_keycode('3')  #长按点击了home键
@@ -321,7 +375,7 @@ class Driver_Elements:
         except:
             logging.error("except---------长按%s【异常】"%name)
             self.take_screenShot("%s"%name)
-            assert 'assert long_press_Byname'
+            assert False,'long_press_Byname的方法异常'
         
     def long_press_Byid(self,id):  #通过元素的id实现长按操作
         '''
@@ -340,8 +394,11 @@ class Driver_Elements:
         except:
             logging.error("except---------长按%s【异常】"%id)
             self.take_screenShot('%s'%id)
-            assert 'assert long_press_Byid'
-            
+            assert False,'long_press_Byid 的方法异常'
+
+    def long_press(self,el):
+        TouchAction(self.driver).long_press(el).perform()
+
     def set_value(self,El_name,value):  #未上线，ios专用
         '''
         method explain:点击android的keycode键值
@@ -353,22 +410,31 @@ class Driver_Elements:
         logging.info('默认值为------'+El_name1) 
         self.driver.set_text()
         
-    def set_text(self,Elname,text):  #查找默认的text值并输入内容
+    def set_text1(self,type,value,text):  #查找默认的text值并输入内容
         '''
         method explain:找到text值并且输入内容
         parameter explain：【Elname】 要被替换的text值，【text】输入的内容
         Usage:
             device.set_text("输入收件人",'10086')  #短信--收件人处输入10086
+        注：name，xpath在iber APP中都不可以使用，待验证在其他APP中的可行性
         '''
-        logging.info("向文本框：'%s'---输入内容：%s"%(Elname,text))
+        logging.info("向文本框：'%s'---输入内容：%s"%(type,text))
         try:
-            element = self.driver.find_element_by_name(Elname)
+            if type == "classname":
+                element = self.driver.find_element_by_class_name(value)
+            elif type == "name":
+                element = self.driver.find_element_by_name(value)
+            elif type == "id":
+                element = self.driver.find_element_by_id(value)
+            elif type == "xpath":
+                element = self.driver.find_element_by_xpath(value)
             element.set_text(text)
-            logging.info("向text默认文本值：'%s'--输入内容：'%s'成功"%(Elname,text))
+            logging.info("设备：'%s'，%s输入内容：'%s'成功" %(self.driver,value,text))
             #return True
         except:
-            self.take_screenShot("%s_%s"%(Elname,text))
-            assert("向text默认文本值--'%s'--输入内容--'%s'失败"%(Elname,text))
+            self.take_screenShot("%s_%s"%(value,text))
+            logging.error("set_text的方法异常")
+            assert False
         
     def take_screenShot(self,name = "takeShot"):   #获取当前屏幕的截图
         '''
@@ -417,7 +483,6 @@ class Driver_Elements:
         Usage:
             device.swipe_Down()
         '''
-        sleep(4)
         screen_size = self.driver.get_window_size()
         x1 = screen_size['width'] * 0.5 
         y1 = screen_size['height'] * 0.25   #起始y坐标
@@ -425,25 +490,20 @@ class Driver_Elements:
         for i in range(n):
             self.driver.swipe(x1,y1,x1,y2,duration)
     
-    def swipe_Left(self,duration = 1000,n = 1):  #屏幕向左滑动
+    def swipe_Left(self,duration = 800,n = 5):  #屏幕向左滑动
         '''
         method explain:屏幕向左滑动
         parameter explain：【duration】 滑屏持续的时间  【n】滑动的次数
         Usage:
             device.swipe_Left()
         '''
-        sleep(4)
         screen_size = self.driver.get_window_size()  #获取屏幕的大小
-        print  screen_size
-        x1 = screen_size['width'] * 0.75 
-        print x1
+        x1 = screen_size['width'] * 0.75
         y1 = screen_size['height'] * 0.5   #起始y坐标
-        print y1
         x2 = screen_size['width'] * 0.05   #终点y坐标
-        print x2
         for i in range(n):
             self.driver.swipe(x1,y1,x2,y1,duration)
-            
+
     def swipe_Right(self,duration = 1000,n = 1):  #屏幕向右滑动
         '''
         method explain:屏幕向右滑动
@@ -451,7 +511,6 @@ class Driver_Elements:
         Usage:
             device.swipe_Right()
         '''
-        sleep(4)
         screen_size = self.driver.get_window_size()
         x1 = screen_size['width'] * 0.05 
         y1 = screen_size['height'] * 0.5   #起始y坐标
@@ -461,7 +520,84 @@ class Driver_Elements:
       
     def reset_APP(self):  #重置apk的方法,,待封装
         self.driver.resetApp
-        
+
+    def press_Keycode(self,keycode):
+        '''
+        :param keycode:
+        keycode对照表：https://www.cnblogs.com/yc-c/p/9014771.html
+        '''
+        self.driver.press_keycode(keycode)
+
+    def long_press_Keycode(self,keycode):
+        '''
+        param keycode:
+        keycode对照表：https://www.cnblogs.com/yc-c/p/9014771.html
+        '''
+        self.driver.long_press_keycode(keycode)
+
+    def start_screen_record_singleDevice(self,time,name,screenshot_path): #开始录制屏幕操作
+        ''''
+        注：单个设备直接调用此方法，不用在所在的module中再次获取udid
+        time:录制的时长，系统默认最长180秒，请在180秒内完成所有操作
+        name：录制视频的命名称
+        screenshot_path：视频存放的路径
+        '''
+        start_record = "adb shell screenrecord  --time-limit %d /sdcard/DCIM/%s.mp4" % (time,name)
+        subprocess.Popen(start_record, shell=True)
+        sleep(2)
+        cmd_pull = "adb pull /sdcard/DCIM/%s.mp4 %s" % (name,screenshot_path)
+        subprocess.Popen(cmd_pull, shell=True)
+
+    def start_screen_record(self,device,time,name,screenshot_path): #开始录制屏幕操作
+        ''''
+        注：需要在module中添加获取yaml文件中的udid
+        device:设备的udid
+        time:录制的时长，系统默认最长180秒，请在180秒内完成所有操作
+        name：录制视频的命名称
+        screenshot_path：视频存放的路径
+        eg:
+            self.device.start_screen_record2(devices_list[0],12,"lucky3","/Users/lucky/Desktop/Auto")
+        '''
+        start_record = "adb -s %s shell screenrecord  --time-limit %d /sdcard/DCIM/%s.mp4" % (device,time,name)
+        subprocess.Popen(start_record, shell=True)
+        logging.info(u"设备：%s 开始录制mp4文件" % device)
+        sleep(2)
+        cmd_pull = "adb -s %s pull /sdcard/DCIM/%s.mp4 %s" % (device,name,screenshot_path)
+        subprocess.Popen(cmd_pull, shell=True)
+        logging.info(u"设备：%s 拉取录制mp4文件到指定目录：%s" % device,screenshot_path)
+
+    def clean_mp4_file(self,device): #清空录制的视频
+        '''
+        device:设备的udid
+        承接方法：start_screen_record
+        eg:
+            self.device.clean_mp4_file(devices_list[0])
+        '''
+        clean_cmd = "adb -s %s shell rm /sdcard/DCIM/*.mp4" % device
+        logging.info(u"设备：%s 清理录制的mp4文件" % device)
+        subprocess.Popen(clean_cmd, shell=True)
+
+    def pull_to_refresh_page(self):
+        """下拉刷新页面,当前页面非顶部的时候禁用
+        eg:
+            self.tester.pull_to_refresh_page()
+        """
+        logging.info(u"下拉刷新页面")
+        startx = self.device_width/2
+        starty = self.device_height/3
+        endx = self.device_width/2
+        endy = self.device_height - 10
+        self.driver.swipe(startx, starty, endx, endy, duration=100)
+        time.sleep(2)
+
+
+    def hide_Keyboard(self):#无效果
+        logging.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@266666666666666666666666666")
+        self.driver.hide_keyboard()
+
+    def send_Keys(self,text):
+        self.driver.send_keys(text)
+
     def test_h5(self):     #待封装
         self.touch_Name("我")
         self.touch_Name("钱包")
@@ -469,4 +605,3 @@ class Driver_Elements:
         print self.driver.contexts
 
 
-        

@@ -7,7 +7,7 @@ Created on 2017.12.12
 from Test.logs.logs import logging
 #from appium import webdriver
 from time import sleep
-from Test.Common.appium_config import DriverClient
+from Test.Common.appium_config2 import DriverClient
 from Test.Common.Driver_Elements import Driver_Elements
 
 class Product_List:

@@ -4,7 +4,7 @@ Created on 2018.1.3
 @author: Lucky
 '''
 
-from Test.Common.appium_config import DriverClient
+from Test.Common.appium_config2 import DriverClient
 from Test.Common.Driver_Elements import Driver_Elements
 from Test.logs.logs import logging
 from time import sleep
