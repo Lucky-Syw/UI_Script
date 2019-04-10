@@ -7,6 +7,7 @@ Created on 2017年12月5日
 
 from Test.module.iBer2.Login import iBer_Login
 import unittest
+from Test.Common.multi_device import appium_desire
 
 class Test_iBer_Test_Login(unittest.TestCase):
 #     @classmethod  
@@ -18,10 +19,15 @@ class Test_iBer_Test_Login(unittest.TestCase):
 #     def tearDownClass(cls):
 #         super(Test_SYW01, cls).tearDownClass()
 #         print "222222"
- 
-    def setUp(self):
+
+    # def __init__(self,host,port):
+    #     self.host = host
+    #     self.port = port
+
+    def setUp(self,udid,port):
         print "set up-----------lucky"
-        self.iBer2 = iBer_Login()
+        driver = appium_desire(udid,port)
+        self.iBer2 = iBer_Login(driver)
          
     def tearDown(self):
         print "teardown222222---Test_iBer_Test_Settings2"
@@ -38,8 +44,4 @@ class Test_iBer_Test_Login(unittest.TestCase):
         self.iBer2.enter_login_page()
         self.iBer2.check_enter_login_pag()
         self.iBer2.login_information("126011111111")
-
-
-
-
-        
+        print "enter case page--------lucky验证远程提交"

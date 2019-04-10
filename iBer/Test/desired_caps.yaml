@@ -1,0 +1,16 @@
+platformVersion: 5.1.1
+platformName: Android
+deviceName: oppo
+appPackage: com.iBer.iBerAppV2
+appActivity: com.iBer.iBerAppV2.MainActivity
+#appPackage: com.android.mms
+#appActivity: /com.qiku.android.mms.ui.MmsConversationListActivity
+noReset: False
+unicodeKeyborad: True   #使用Unicode编码方式发送字符串
+resetKeyborad: True     #隐藏键盘
+ip: 127.0.0.1
+#port: 4723
+#devices_list: ["7f4bd69a","57614229"]  #给出需要启动的设备udid,此处启动2个真机
+#devices_list: ["57614229","127.0.0.1:62001"]
+devices_list: ["57614229","127.0.0.1:62001"]
+

@@ -1,0 +1,14 @@
+[2019-04-09 19:57:10] [line:16] [INFO] Test_appium.....setUp
+[2019-04-09 19:57:10] [line:117] [INFO] Could not connect to port 4723 on host 127.0.0.1
+[2019-04-09 19:57:10] [line:136] [INFO] Could not get IP address for host: 127.0.0.1
+[2019-04-09 19:57:10] [line:388] [DEBUG] POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"appium:deviceName": "57614229", "appium:appActivity": "com.android.mms/com.qiku.android.mms.ui.MmsConversationListActivity", "platformName": "Android", "appium:appPackage": "com.android.mms", "appium:platformVersion": "4.4.2"}]}, "desiredCapabilities": {"platformVersion": "4.4.2", "deviceName": "57614229", "platformName": "Android", "appActivity": "com.android.mms/com.qiku.android.mms.ui.MmsConversationListActivity", "appPackage": "com.android.mms"}}
+[2019-04-09 19:57:10] [line:205] [DEBUG] Starting new HTTP connection (1): 127.0.0.1:4723
+[2019-04-09 19:57:10] [line:400] [DEBUG] Incremented Retry for (url='/wd/hub/session'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+[2019-04-09 19:57:10] [line:662] [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10e56afd0>: Failed to establish a new connection: [Errno 61] Connection refused',)': /wd/hub/session
+[2019-04-09 19:57:10] [line:205] [DEBUG] Starting new HTTP connection (2): 127.0.0.1:4723
+[2019-04-09 19:57:10] [line:400] [DEBUG] Incremented Retry for (url='/wd/hub/session'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+[2019-04-09 19:57:10] [line:662] [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10e58c190>: Failed to establish a new connection: [Errno 61] Connection refused',)': /wd/hub/session
+[2019-04-09 19:57:10] [line:205] [DEBUG] Starting new HTTP connection (3): 127.0.0.1:4723
+[2019-04-09 19:57:10] [line:400] [DEBUG] Incremented Retry for (url='/wd/hub/session'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+[2019-04-09 19:57:10] [line:662] [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10e58c310>: Failed to establish a new connection: [Errno 61] Connection refused',)': /wd/hub/session
+[2019-04-09 19:57:10] [line:205] [DEBUG] Starting new HTTP connection (4): 127.0.0.1:4723
