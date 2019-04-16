@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bc27563-c9ac-4b01-a81c-44bce92f1876" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Common/Driver_Elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Common/Driver_Elements.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Common/multi_device.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Common/multi_device.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/desired_caps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Test/desired_caps.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/module/iBer2/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/module/iBer2/Login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/module/iBer2/Test_Demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/module/iBer2/Test_Demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/module/iRun_logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Test/module/iRun_logs/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,23 +67,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/module/iBer2/Login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="55" column="24" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="24" />
-              <folding>
-                <marker date="1555419639427" expanded="true" signature="3291:3695" ph="..." />
-              </folding>
+            <state relative-caret-position="975">
+              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Test/Common/Driver_Elements.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="161" column="31" selection-start-line="161" selection-start-column="31" selection-end-line="161" selection-end-column="31" />
+            <state relative-caret-position="-192">
+              <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
               <folding>
                 <element signature="e#24#66#1" />
                 <element signature="e#67#101#0" expanded="true" />
@@ -104,7 +95,6 @@
                 <element signature="e#2189#2273#0" />
                 <element signature="e#2302#2430#0" />
                 <element signature="e#3423#3598#0" />
-                <element signature="e#3658#3752#0" />
                 <element signature="e#2475#2809#0" />
                 <element signature="e#3005#3020#0" />
                 <element signature="e#4088#4121#0" />
@@ -508,7 +498,7 @@
       <workItem from="1554788985838" duration="325000" />
       <workItem from="1554798705494" duration="57000" />
       <workItem from="1554798790014" duration="11921000" />
-      <workItem from="1554877012920" duration="45434000" />
+      <workItem from="1554877012920" duration="45762000" />
     </task>
     <servers />
   </component>
@@ -545,17 +535,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146350000" />
+    <option name="totallyTimeSpent" value="146678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="23" y="23" width="1440" height="831" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22246066" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22246066" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.14799447" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.594046" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15832205" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6400541" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -865,10 +856,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Test/module/iBer2/Login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Test/Common/Driver_Elements.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="161" column="31" selection-start-line="161" selection-start-column="31" selection-end-line="161" selection-end-column="31" />
+        <state relative-caret-position="-192">
+          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
           <folding>
             <element signature="e#24#66#1" />
             <element signature="e#67#101#0" expanded="true" />
@@ -883,7 +881,6 @@
             <element signature="e#2189#2273#0" />
             <element signature="e#2302#2430#0" />
             <element signature="e#3423#3598#0" />
-            <element signature="e#3658#3752#0" />
             <element signature="e#2475#2809#0" />
             <element signature="e#3005#3020#0" />
             <element signature="e#4088#4121#0" />
@@ -968,16 +965,6 @@
             <element signature="e#18888#19149#1" />
             <element signature="e#19392#19458#1" />
             <element signature="e#18098#18214#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/module/iBer2/Login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="55" column="24" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="24" />
-          <folding>
-            <marker date="1555419639427" expanded="true" signature="3291:3695" ph="..." />
           </folding>
         </state>
       </provider>
