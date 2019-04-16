@@ -30,6 +30,26 @@ class Driver_Elements:
         logging.info(u"设备：%s最大等待时长 %s" %(self.driver,time))
         self.driver.implicitly_wait(time)
 
+    def isExist_Popwindow(self,driver,number =5): #判断权限弹框
+        '''
+        fuction:权限弹窗-始终允许
+        args:传driver
+        number，判断弹窗次数，默认给5次
+        其它：WebDriverWait里面0.5s判断一次是否有弹窗，1s超时
+        '''
+        for i in range(number):
+            loc = ("xpath","//*[@text='允许']")
+            logging.info(loc)
+            if EC.presence_of_element_located(loc):
+                try:
+                    e = WebDriverWait(driver,1,0.5).until(EC.presence_of_element_located(loc))
+                    e.click()
+                    break
+                except:
+                    pass
+            else:
+                continue
+
     def is_element_exist(self, element, timeout=1):  #判断给定元素是否存在
         """判断元素是否存在，存在返回True，不存在返回No
         增加timeout超时等待，默认为1次，可通过传的参数覆盖
@@ -131,6 +151,41 @@ class Driver_Elements:
 
     def set_Text(self, text):
         return self.driver.set_text(text)
+
+    def adb_input_Chinese(self,device,text): #发送中文
+        '''
+        前提条件：手机或模拟器安装ADBKeyBoard.apk并设置为默认输入法
+        parameter explain: device: 多设备时的设备选择
+        parameter explain: text: 输入的内容
+        eg:
+           adb shell am broadcast -a ADB_INPUT_TEXT --es msg '测试输入内容'
+        说明：此方法的弊端，多设备时会执行多次这个命令
+        '''
+        os.system("adb -s %s shell am broadcast -a ADB_INPUT_TEXT --es msg '%s'" %(device,text))
+        #cmd = "adb -s %s shell am broadcast -a ADB_INPUT_TEXT --es msg '%s'" %(device,text)
+        # subprocess.Popen(cmd, shell=True)
+        # sleep(5)
+
+    def adb_input_keyevent(self,device,text):#发送keyevent事件
+        '''
+        前提条件：手机或模拟器安装ADBKeyBoard.apk并设置为默认输入法
+        parameter explain: device: 多设备时的设备选择
+        parameter explain: text: 输入的内容
+        eg:
+            adb shell am broadcast -a ADB_INPUT_CODE --ei code 7
+        '''
+        os.system("adb -s %s shell am broadcast -a ADB_INPUT_CODE --ei code '%d'" % (device, text))
+
+    def adb_input_UnicodeChars(self,device,text): #发送Unicode字符（emoji表情）
+        '''
+        前提条件：1、手机或模拟器安装ADBKeyBoard.apk并设置为默认输入法，2、定位到输入框
+        parameter explain: device: 多设备时的设备选择
+        parameter explain: text: 输入的内容
+        eg:
+            adb shell am broadcast -a ADB_INPUT_CHARS --eia chars '128568,32,67,97,116'
+        '''
+        os.system("adb -s %s shell am broadcast -a ADB_INPUT_CHARS --eia chars '%s'" % (device, text))
+        sleep(3)
 
     def touch_Name(self,name):   #通过 name 点击元素
         '''
@@ -276,7 +331,7 @@ class Driver_Elements:
             logging.error("except-------未查找到toast--%s【异常】"%message)
             return False
 
-    def touch_tap(self,x,y,duration=100):   #点击相对坐标  ,x1,x2,y1,y2
+    def touch_tap(self,x,y,duration=200):   #点击相对坐标  ,x1,x2,y1,y2
         '''
         method explain:点击坐标
         parameter explain：【x,y】坐标值,【duration】:给的值决定了点击的速度
@@ -490,7 +545,7 @@ class Driver_Elements:
         for i in range(n):
             self.driver.swipe(x1,y1,x1,y2,duration)
     
-    def swipe_Left(self,duration = 800,n = 5):  #屏幕向左滑动
+    def swipe_Left(self,duration = 800,n = 6):  #屏幕向左滑动
         '''
         method explain:屏幕向左滑动
         parameter explain：【duration】 滑屏持续的时间  【n】滑动的次数

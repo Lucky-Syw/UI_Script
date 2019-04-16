@@ -4,12 +4,9 @@ from appium import webdriver
 from time import ctime
 import yaml
 import sys
-#from Run_Tests import Run_test
-#from Test.module.iBer2.Login import iBer_Login
-#from iBer_Test_Login import Test_iBer_Test_Login
 
 from Add_Case_Gather import Run_test
-import os
+import os,time
 from time import sleep
 #为了读取yaml中的中文，否则会报错
 reload(sys)
@@ -39,7 +36,6 @@ for i in range(len(devices_list)):
         print str(data['ip'])+str(port)
         driver = webdriver.Remote('http://'+str(data['ip'])+':'+str(port)+'/wd/hub',desired_caps)
         print driver
-
 
         #调用需要执行的步骤操作方法
         Run_test(driver).run_test1()

@@ -21,63 +21,53 @@ with open(path+"/desired_caps.yaml","r") as file:
     data = yaml.load(file)
 
 devices_list = data["devices_list"]
+phone_list = data["phone"]
 
 class iBer_Login:
 
     def __init__(self,driver):
         print  "--------------iBer_Login-----------------"
-        self.device = Driver_Elements(driver)
-        self.device.implicitly_Wait(10)  # 测试验证
+        self.driver = driver
+        self.device = Driver_Elements(self.driver)
+        self.device.implicitly_Wait(20)  # 测试验证
+
+
 
     def enter_login_page(self):
         logging.info("enter_login_page-----------------99999-")
-
-       #-------------------------测试代码----开始-----------------------------------
-
-        #self.device.press_keycode(3)
-        # self.device.start_screen_record2(devices_list[0],12,"lucky4","/Users/lucky/Desktop/Auto/UI_Script/iBer/screenShots")
-        # self.device.clean_mp4_file(devices_list[0])
-        self.device.tap_screen_center()
-        logging.info("&&&&&&&&&&***************************&&&&&&&&&&&&&&&&&&&")
-        # -----------------------测试代码------结束---------------------------------
-
-        # 欢迎页的滑屏
-        sleep(12)
-        # self.device.take_screenShot("%s" %self.device)
-        # for i in range(5):
-        #     self.device.swipe_Left()
-        #     sleep(2)
-
+        #self.device.isExist_Popwindow(self.driver)
+        sleep(8)  # 等待启动页加载完毕
         self.device.swipe_Left()
         sleep(2)
         # 点击"立即体验"按钮
         self.device.touch_tap(556, 1653, 500)
-        self.device.hide_Keyboard()
         el_name=self.device.find_xpath_name("请输入手机号码")
-        if el_name:
-            el_name.click()
-            el_name.send_keys("12606666333")
-        self.device.back(1)
+        el_name.click()
+        el_name.send_keys("12606666333")
 
+
+        sleep(3)
+        for i in range(2):  #模拟器的坑，需要点2次才可以点中
+            logging.info("&&&*************************************************&&")
+            self.device.touch_tap(257,903,700)
+
+        sleep(4)
         xpath_name = self.device.find_xpath("//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.EditText")
         xpath_name.click()
         xpath_name.send_keys("11111111")
-        sleep(2)
-        self.device.back(1)
-        sleep(2)
+
+
         el_name2 = self.device.find_xpath_name(u"立即登录")
         if el_name2:
-            logging.error("000000000000000000000000000000000")
-            self.device.long_press(el_name2)
+            el_name2.click()   #因click无效果，因此需多使用一次click操作
+            el_name2.click()
 
-    def check_enter_login_pag(self):
-        sleep(15)
-        find_text = self.device.find_Element(type="name", value= "请输入手机号码")
-        if find_text:
-            logging.info("find login page")
-        else:
-            logging.error("000000000000000000000000000000000")
-            assert False
+        #跳过
+        sleep(3)
+        el_name2 = self.device.find_xpath_name(u"跳过")
+        if el_name2:
+            el_name2.click()
+            el_name2.click()
 
 
     def login_information(self):
