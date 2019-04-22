@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 '''
-Created on 2017年12月5日
+Created on 2019年04月22日
 
-@author: Administrator
+@author: Lucky
 '''
 
 from Test.module.iBer2.Login import iBer_Login
 import unittest
+from Test.logs.logs import logging
 
 
 class Test_iBer_Test_Login(unittest.TestCase):
@@ -20,8 +21,10 @@ class Test_iBer_Test_Login(unittest.TestCase):
         pass
 
     def test_iBer_Login(self):
-        print "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ enter case page"
+        logging.info("***********************Test Case：test_iBer_Login*************************************")
         self.iBer.enter_login_page()
+        self.iBer.back_desktop()
+        #self.iBer.enter_WeiJi_share()
         #self.iBer.check_enter_login_pag()
         # self.iBer.login_information()
         # self.iBer.login()

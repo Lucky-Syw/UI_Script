@@ -4,7 +4,7 @@ Created on 2018.1.3
 @author: Lucky
 '''
 from Test.logs.logs import logging
-from appium import webdriver
+from uiautomator import device
 from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -29,6 +29,16 @@ class Driver_Elements:
     def implicitly_Wait(self,time=20):
         logging.info(u"设备：%s最大等待时长 %s" %(self.driver,time))
         self.driver.implicitly_wait(time)
+
+    def start_Activity(self,app_package, app_activity):  #启动APP
+        '''
+        eg:
+            self.device.start_Bctivity("com.iBer.iBerAppV2","com.iBer.iBerAppV2.MainActivity")
+        '''
+        self.driver.start_activity(app_package, app_activity)
+
+    def wait_Activity(self,activity, timeout):  #等待APP的启动
+        self.driver.wait_activity(activity, timeout)
 
     def isExist_Popwindow(self,driver,number =5): #判断权限弹框
         '''
@@ -62,8 +72,7 @@ class Driver_Elements:
         count = 0
         while count < timeout:
             source = self.driver.page_source
-            logging.error(source)
-            logging.error("((((((((((((((((((((((((((((((((((((((((((((((999990")
+            logging.info(source)
             if element in source:
                 logging.info(u"设备：找到控件: %s" %element)
                 sleep(3)
@@ -645,6 +654,8 @@ class Driver_Elements:
         self.driver.swipe(startx, starty, endx, endy, duration=100)
         time.sleep(2)
 
+    def close_app(self):
+        self.driver.close_app()
 
     def hide_Keyboard(self):#无效果
         logging.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@266666666666666666666666666")
@@ -658,5 +669,14 @@ class Driver_Elements:
         self.touch_Name("钱包")
         self.touch_Name("理财通")
         print self.driver.contexts
+
+
+
+
+
+
+
+
+
 
 
