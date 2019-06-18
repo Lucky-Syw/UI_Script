@@ -4,11 +4,9 @@ Created on 2017/6/9
 @author: SYW
 用途：将测试结果集成到html报告中，并修改参数，生成相应的报告份数
 '''
-import Test.HTMLTestRunner
+import Common.html.HTMLTestRunner2
 import time, os
 import logging
-
-
 from Test.Case_Gathers import Case_ganthers
 
 class Run_test:
@@ -26,7 +24,7 @@ class Run_test:
             logging.info(File_Path)
             Report_FileName = file(File_Path + now + r"_ReportResult.html", 'wb')
             print Report_FileName
-            runner = Test.HTMLTestRunner.HTMLTestRunner(stream=Report_FileName, title="test result",
+            runner = Common.html.HTMLTestRunner2.HTMLTestRunner(stream=Report_FileName, title="【iBer_Checklist_精简版】UI测试报告",
                                                         description="result:")
 
             runner.run(self.driver.suites()) ## suite为Case_Gathers.py中的suite，用法：将case中的suite添加到报告中生成

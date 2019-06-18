@@ -3,7 +3,7 @@
 Created on 2018.1.3
 @author: Lucky
 '''
-from Test.logs.logs import logging
+from Common.log.logs import logging
 from uiautomator import device
 from time import sleep
 from selenium.webdriver.common.by import By
@@ -13,12 +13,13 @@ from selenium.webdriver.support import expected_conditions as EC,\
 import time,os
 import subprocess
 from appium.webdriver.common.touch_action import TouchAction
+from selenium.common.exceptions import TimeoutException
 
 
 class Driver_Elements:
     
     def __init__(self,driver):
-        print "enter Driver_Elements---------------"
+        print "enter driver_Elements---------------"
         self.driver = driver
         self.action = TouchAction(self.driver)
         self.device_width = self.driver.get_window_size()['width']
@@ -29,6 +30,18 @@ class Driver_Elements:
     def implicitly_Wait(self,time=20):
         logging.info(u"设备：%s最大等待时长 %s" %(self.driver,time))
         self.driver.implicitly_wait(time)
+
+    def wait_element(self,driver,msg,time=10,):#显示等待，待封装与验证
+        # try:
+        #     WebDriverWait(driver, time). \
+        #         until(expected_conditions.presence_of_element_located((element_by, element)), msg)
+        # except TimeoutException, e:
+        #     raise
+        try:
+            WebDriverWait(driver, time).until(
+                expected_conditions.presence_of_element_located(By.XPATH, msg))
+        except TimeoutException, e:
+            raise
 
     def start_Activity(self,app_package, app_activity):  #启动APP
         '''
@@ -141,7 +154,8 @@ class Driver_Elements:
             self.device.find_xpath("//hierarchy/android....")
         '''
         sleep(2)
-        el_xpath = self.driver.find_element_by_xpath(xpath)
+        logging.info("查找xpath：%s"%xpath)
+        el_xpath = self.driver.find_element_by_xpath('/'+xpath)
         return el_xpath
 
     def element_click(self):   #查找到元素进行点击
@@ -195,6 +209,9 @@ class Driver_Elements:
         '''
         os.system("adb -s %s shell am broadcast -a ADB_INPUT_CHARS --eia chars '%s'" % (device, text))
         sleep(3)
+
+    def adb_input_English(self,device,text):
+        os.system("adb -s %s shell input text '%s'" % (device, text))
 
     def touch_Name(self,name):   #通过 name 点击元素
         '''
@@ -474,7 +491,7 @@ class Driver_Elements:
         logging.info('默认值为------'+El_name1) 
         self.driver.set_text()
         
-    def set_text1(self,type,value,text):  #查找默认的text值并输入内容
+    def element_set_text(self,type,value,text):  #查找默认的text值并输入内容
         '''
         method explain:找到text值并且输入内容
         parameter explain：【Elname】 要被替换的text值，【text】输入的内容
@@ -482,19 +499,22 @@ class Driver_Elements:
             device.set_text("输入收件人",'10086')  #短信--收件人处输入10086
         注：name，xpath在iber APP中都不可以使用，待验证在其他APP中的可行性
         '''
-        logging.info("向文本框：'%s'---输入内容：%s"%(type,text))
+        logging.info("文本框中输入内容")
         try:
-            if type == "classname":
-                element = self.driver.find_element_by_class_name(value)
-            elif type == "name":
-                element = self.driver.find_element_by_name(value)
-            elif type == "id":
-                element = self.driver.find_element_by_id(value)
-            elif type == "xpath":
-                element = self.driver.find_element_by_xpath(value)
-            element.set_text(text)
-            logging.info("设备：'%s'，%s输入内容：'%s'成功" %(self.driver,value,text))
-            #return True
+            if self.is_element_exist(value):
+                if type == "classname":
+                    element = self.driver.find_element_by_class_name(value)
+                elif type == "name":
+                    element = self.find_xpath_name(value)
+                elif type == "id":
+                    element = self.driver.find_element_by_id(value)
+                elif type == "xpath":
+                    element = self.driver.find_element_by_xpath(value)
+                element.set_text(text)
+                logging.info("设备：'%s'，%s输入内容：'%s'成功" %(self.driver,value,text))
+                #return True
+            else:
+                logging.error("查找得元素不存在：%s" % value)
         except:
             self.take_screenShot("%s_%s"%(value,text))
             logging.error("set_text的方法异常")

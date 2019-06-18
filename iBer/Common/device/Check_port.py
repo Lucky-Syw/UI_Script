@@ -28,24 +28,14 @@ def check_port(host,port):
 def release_port(port):
     print"release_port-------------杀掉已占用的端口"
     '''杀掉正在执行的端口'''
-    cmd_find = "lsof -i tcp:%s" %port
-    print cmd_find
+    cmd = "lsof -i:%s|awk 'NR==2{print $2}'" % port
+    pid = os.popen(cmd).read()
+    print "find port:%s, pid is value：%s" %(port,pid)
+    cmd = "kill -9 %s" % pid
+    print "kill port：%s，pid value：%s"%(port,pid)
+    os.popen(cmd).read()
 
-    result = os.popen(cmd_find).read()
-    x = re.findall("node (.*) lucky",result)
-    x2 = ''.join(x)   #获取到pid的数值
-    print "%s,%s" %(port,x2)   #获取查看cmd_find的所有查询结果
-    # if str(port) and "PID" in result:
-    #     start = result.index("3")
-    #     end = result.index("l")
-    #     pid = result[start:end]   #获取到pid的数值
-    #     print str(pid)+"这是已经被port占用的pid号"
 
-    cmd_kill = "sudo kill -9 %s"%x2
-    os.popen(cmd_kill)
-
-    # else:
-    #     print "port %s is available" %port
 
 # if __name__ =="__main__":
 #     host = "127.0.0.1"
