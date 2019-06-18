@@ -1,162 +1,137 @@
-# coding=UTF-8
+#!/usr/bin/python
+# -*- coding:UTF-8 -*-
 '''
-Created on 2017.12.5
+Created on 2019年04月22日
 
-@author: SYW
+@author: Lucky
 '''
 
-from Test.logs.logs import logging
-#from appium import webdriver
+from Common.log.logs import logging
 from time import sleep
-from Test.Common.appium_config2 import DriverClient
-from Test.Common.Driver_Elements import Driver_Elements
+from Test.Driver_Elements.Driver_Elements import Driver_Elements
+import os,yaml
+
+'''
+在module中使用start_screen_record2方法，则需要使用如下此段获取到设备udid
+'''
+path = os.getcwd()
+with open(path+"/desired_caps.yaml","r") as file:
+    data = yaml.load(file)
+
+devices_list = data["devices_list"]
+phone_list = data["phone"]
 
 class iBer_Login:
 
-    def __init__(self): 
-        driver = DriverClient().getDriver()
-        self.device = Driver_Elements(driver)
-        self.device.implicitly_Wait(10)      #测试验证
+    def __init__(self,driver):
+        print  "--------------iBer_Login-----------------"
+        self.driver = driver
+        self.device = Driver_Elements(self.driver)
+        self.device.implicitly_Wait(20)  # 测试验证
 
-    sleep(20)
+
     def enter_login_page(self):
-        print "module---------"
-        # 欢迎页的滑屏
-        for i in range(5):
-            self.device.swipe(1020, 1036, 51, 1036)
-            sleep(2)
-        # 点击"立即体验"按钮
-        self.device.tap([(556, 1653), (556, 1653), (556, 556)], 500)
+        logging.info("enter_login_page-----------------99999-")
+        #self.device.isExist_Popwindow(self.driver)
+        sleep(13)  # 等待启动页加载完毕
+        self.device.swipe_Left()
         sleep(2)
+        # 点击"立即体验"按钮
+        self.device.touch_tap(556, 1653, 500)
+        el_name=self.device.find_xpath_name("请输入手机号码")
+        el_name.click()
+        el_name.send_keys("12606666333")
+        self.device.back(1)
 
-    def check_enter_login_pag(self):
-        if self.device.find_Element(type ="name",value="请输入手机号码"):
-            logging.info("find login page")
-        else:
-            logging.error("000000000000000000000000000000000")
+        #sleep(3)
+        for i in range(2):  #模拟器的坑，需要点2次才可以点中
+            logging.info("&&&*************************************************&&")
+            self.device.touch_tap(257,903,700)
+        self.device.adb_input_English(devices_list[0], "11111111")
 
+        # sleep(4)
+        # xpath_name = self.device.find_xpath2("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.EditText")
+        # xpath_name.click()
+        # xpath_name.set_Text("11111111")
+        # for i in range(2):  # 模拟器的坑，需要点2次才可以点中
+        #self.device.touch_tap(257, 903)
+        #os.system("adb shell am broadcast -a ADB_INPUT_TEXT --es msg '11111111'")
 
-        
-    def Setting_MyCertification2(self):
-        
-        logging.info("start test iBer my certification")
-        '''我的认证'''
-        self.device.test_h5()
-        logging.info("product list test finishing*****************")
-        
-    def Setting_MyCertification(self):
-        logging.info("start test iBer my certification")
-        
-        
-        
-        self.device.test_h5()
-        
-        sleep(2000)
-        
-        
-        
-        
-        
-        '''我的认证'''
-        sleep(5)
-        self.device.touch_ClassName("android.widget.ImageView")
-        #self.device.touch_Name("我的認證")
-        
-        a = self.device.find_Element(type = 'name',value="我的認證")
-        a.click()
-        a = self.device.find_Element(type = 'name',value="我")
-        if a == False:
-            logging.info( '888888888888888888999999999999999')
-            
-            
-        self.Setting_MyCertification_MessageFill(Cname='實名認證',default_Sname='未填寫',default_Snumber='請輸入證件號碼',Sname='lucky',Snumber='622630199407131707')
-        #上传正面照片 
-        self.device.touch_Name("上傳證件正面照片")
-        #sleep(2) 
-        self.device.touch_Name("拍照上傳")
-        #判断相机权限获取弹框提示
-        #sleep(3)
-        camera_button = self.device.find_element_by_id("com.huawei.camera:id/shutter_button")
-        if not camera_button:
-            always_allow = self.device.find_Name("始终允许")
-            self.device.touch_Name("禁止后不再询问")
-            always_allow.click()
-            if always_allow:
-                self.device.touch_Name("禁止后不再询问")
-                always_allow.click()
-        camera_button.click()
-        #sleep(1)
-        self.device.touch_Id("com.huawei.camera:id/btn_review_confirm")
-        #上传背面照片
-        self.device.touch_Name("上傳證件背面照片")
-        #sleep(2) 
-        self.device.touch_Name("拍照上傳")
-        #判断相机权限获取弹框提示
-        #sleep(3)
-        camera_button = self.device.find_Id("com.huawei.camera:id/shutter_button")
-        if not camera_button:
-            always_allow = self.device.find_Name("始终允许")
-            self.device.touch_Name("禁止后不再询问")
-            always_allow.click()
-            if always_allow:
-                self.device.touch_Name("禁止后不再询问")
-                always_allow.click()
-        camera_button.click()
-        #sleep(1)
-        self.device.touch_Id("com.huawei.camera:id/btn_review_confirm")
-        #sleep(3)
-        self.Setting_MyCertification_ConfirmUpload('實名認證')
-    
-    def Setting_MyCertification_MessageFill(self,Cname,default_Sname,default_Snumber,Sname,Snumber):
-        
-        '''方法说明：点击认证名称进入，直到操作到上传图片的上一步
-        Cname:认证的名称
-        default_Sname:认证的默认提示名称
-        default_Snumber:输入的默认提示认证账号名称
-        Sname:输入的认证名称
-        Snumber:输入的认证账号
-        '''
-        logging.info("----------开始***%s---------"%Cname)
-        self.device.touch_Name("%s"%Cname)   #實名認證
-#         logging.info("此处有问题，还需在调整22222222222222222222222222222222")
-#         if self.device.find_element_by_name("開始實名認證，讓客戶放心信任，讓溝通更加順暢。"):
-#             self.device.find_element_by_name("確定").click() 
-        sleep(3)
-        logging.info('***************************************')
-        if self.device.find_Name("重新認證"):
-            self.device.touch_Name("重新認證")
-        sleep(1)
-        unfilled = self.device.find_Name("%s"%default_Sname) #未填写
-        if not unfilled:
-            self.device.back(2)
-        unfilled.click()
-        unfilled.send_keys("%s"%Sname)  #lucky
-        sleep(1)
-        a = self.device.find_Name("未填寫")
-        a.click()
-        a.send_keys("777777")
-        ID_number = self.device.find_Name("%s"%default_Snumber) #請輸入證件號碼
-        ID_number.click()
-        ID_number.send_keys("%s"%Snumber)   #622630199407131707
-        self.device.swipe(588,773,588,773)   #随便点击一个地方取消输入框
-        
-    def Setting_MyCertification_ConfirmUpload(self,Cname):
-        '''
-                    方法说明：确认上传方法的封装
-        Cname:认证的名称
-        '''
-        logging.info("上传认证信息！！！！！！")
-        self.device.touch_Name("確認上傳")   #确认上传
+        self.device.back(1)  #将输入键盘取消
+        el_name2 = self.device.find_xpath_name(u"立即登录")
+        if el_name2:
+            el_name2.click()   #因click无效果，因此需多使用一次click操作
+            el_name2.click()
+
+        #跳过
         sleep(4)
-        upload_successfully = self.device.find_Name("上傳成功")
-        logging.info("判断是否上传成功！！！！")
-        sleep(3)
-        if upload_successfully:
-            self.device.swipe(951,765,951,765)    #上传成功后的弹框点击x
-        logging.info("----------结束***%s---------"%Cname)
-        
+        el_name2 = self.device.find_xpath_name(u"跳过")
+        if el_name2:
+            el_name2.click()
 
-if __name__ == "__main__":
-    a = iBer_MyCertification()
-    a.Setting_MyCertification2()
-            
+
+    def back_to_firstPage(self):
+        self.device.back(5)
+
+
+
+    def enter_WeiJi_share(self):
+        sleep(3)
+        self.device.swipe_UP(duration = 1000,n = 1)
+        logging.info("-------------------重疾查询------------------")
+        sleep(10)
+        self.device.find_xpath_name("重疾查询").click()
+        sleep(3)
+        logging.info("-------------------癌症------------------")
+        self.device.find_xpath_name("癌症").click()
+        sleep(7)
+        logging.info("-------------------ndroid.view.ViewGroup------------------")
+        #self.device.touch_ClassNames("android.view.ViewGroup",0)
+        a= self.device.find_xpath("//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup")
+        a.click()
+        sleep(2)
+        self.device.find_xpath_name("WeChat").click()
+        self.device.find_xpath_name("微信").click()
+        # sleep(2)
+        # self.device.touch_Id("com.qiku:id/text1")   微信的ID
+        sleep(4)
+        self.device.find_xpath_name("％Lucky").click()
+        sleep(4)
+        #self.device.touch_Id("com.tencent.mm:id / au_")  #分享的ID
+        self.device.find_xpath_name("分享").click()
+        sleep(2)
+        self.device.find_xpath_name("留在微信").click()
+        #如下是在微信中的操作
+        sleep(2)
+        self.device.find_xpath_name("％Lucky").click()
+        sleep(3)
+        self.device.find_xpath_name("癌症").click()
+        sleep(7)
+
+        #执行的是fautotest的代码
+        self.device.find_xpath_name("相關資訊").click()
+        sleep(3)
+        self.device.find_xpath_name("立即諮詢").click()
+
+
+
+
+        self.device.back(7)
+        #self.device.startActivity(devices_list[0],"com.iBer.iBerAppV2.MainActivity")
+
+
+
+    def login_information(self):
+        logging.info("输入登录信息")
+        #self.device.set_text1(u"请输入手机号码",mobile)
+        #self.device.set_text1("classname","android.widget.EditText",mobile)
+        #self.device.set_text("xpath","/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.EditText",mobile)
+        #self.device.class_1("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.EditText",mobile)
+        #self.device.set_text("xpath","/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.EditText",password)
+        self.device.touch_tap(766,1750)
+        # self.device.set_text2(password)
+        #self.device.touch_Name(u"WeChat")
+
+    def login(self):
+        self.device.touch_tap(191,1663)
+

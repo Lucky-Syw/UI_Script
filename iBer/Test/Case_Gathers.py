@@ -8,9 +8,9 @@ Created on 2019年04月22日
 '''
 
 import unittest
-from Test.Case.iBer2.iBer_Test_Login import Test_iBer_Test_Login
-from Test.Case.iBer2.iBer_Test_shouYe import Test_iBer_Test_shouYe
-from Test.Case.iBer2.iBer_Test_Quan import Test_iBer_Test_Quan
+from Test.Case.iBer.iBer_Test_Login import Test_iBer_Test_Login
+from Test.Case.iBer.iBer_Test_shouYe import Test_iBer_Test_shouYe
+from Test.Case.iBer.iBer_Test_Quan import Test_iBer_Test_Quan
 
 
 class Case_ganthers:
@@ -33,6 +33,6 @@ class Case_ganthers:
             Test_iBer_Test_Quan.driver = self.b
 
             #loadTestsFromTestCase只可添加类，因此需要进行如上的赋值操作
-            suite.addTests(unittest.TestLoader().loadTestsFromTestCase(Test_iBer_Test_shouYe))
+            #suite.addTests(unittest.TestLoader().loadTestsFromTestCase(Test_iBer_Test_shouYe))
             suite.addTests(unittest.TestLoader().loadTestsFromTestCase(Test_iBer_Test_Quan))
         return suite

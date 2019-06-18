@@ -5,7 +5,7 @@ Created on 2017年12月5日
 @author: Administrator
 '''
 
-from Test.module.iBer2.Login import iBer_Login
+from Test.module.iBer.Login import iBer_Login
 import unittest
 from Test.Common.multi_device import appium_desire
 

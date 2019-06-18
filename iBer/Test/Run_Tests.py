@@ -7,10 +7,10 @@
 '''
 
 
-from Test.Common.multi_appium import appium_start
+from Common.device.multi_appium import appium_start
 #from multi_device import appium_desire
-from Test.Common.multi_device import appium_desire
-from Test.Common.Check_port import *
+from Common.device.multi_device import appium_desire
+from Common.device.Check_port import *
 from time import sleep
 import multiprocessing
 import sys
