@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/iBer.iml" filepath="$PROJECT_DIR$/.idea/iBer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../iBer_Python_Interface/iBer_Interface/.idea/iBer_Interface.iml" filepath="$PROJECT_DIR$/../../iBer_Python_Interface/iBer_Interface/.idea/iBer_Interface.iml" />
     </modules>
   </component>
 </project>

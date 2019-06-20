@@ -11,6 +11,7 @@ from Common.log.logs import logging
 
 
 class Test_iBer_Test_Login(unittest.TestCase):
+    '''登录'''
     driver = None
 
     def setUp(self):
@@ -21,6 +22,7 @@ class Test_iBer_Test_Login(unittest.TestCase):
         self.iBer.back_to_firstPage()
 
     def test_iBer_Login(self):
+        '''登录账号'''
         logging.info("***********************Test Case：test_iBer_Login*************************************")
         self.iBer.enter_login_page()
         #self.iBer.back_desktop()

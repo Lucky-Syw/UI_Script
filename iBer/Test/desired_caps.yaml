@@ -1,3 +1,4 @@
+#【如下内容是必填项】
 platformVersion: 5.1.1
 platformName: Android
 deviceName: oppo
@@ -13,5 +14,7 @@ ip: 127.0.0.1
 #devices_list: ["7f4bd69a","57614229"]  #给出需要启动的设备udid,此处启动2个真机
 #devices_list: ["57614229","127.0.0.1:62001"]
 devices_list: ["57614229"]
+
+#【如下内容可选项】具体根据自己的脚本需要进行补充写
 phone: ["12606666333"]
 

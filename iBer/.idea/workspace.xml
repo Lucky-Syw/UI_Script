@@ -2,45 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bc27563-c9ac-4b01-a81c-44bce92f1876" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Quan.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Case/iBer/iBer_Test_shouYe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/module/iBer/iBerQuan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/iBer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/iBer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Case/iBer2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Case/iBer2/iBer_Test_Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Case/iBer_Test01/iBer_Test_Login2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Case/iBer_Test01/iBer_Test_Login2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Quan.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Quan.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/Case_Gathers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Case_Gathers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Common/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Case/iBer/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Common/appium_config2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/HTMLTestRunner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Run_Tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Run_Tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/desired_caps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Test/desired_caps.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/module/iBer/Customer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/module/iBer/Login.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/module/iBer/Product_List.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/module/iBer/Test_Driver_Elements.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/module/iBer/Test_H5_iBer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/module/iBer/iBer_MyCertification.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/module/iBer/iBer_MyCertification2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/module/iBer2/Login.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/module/iBer2/Test_Demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/module/iBer/Test_Demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/module/iBer2/iBerQuan.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/module/iBer2/shouYe.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/module/iBer/shouYe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Case/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Case/iBer2/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Case/iBer2/iBer_Test_Quan.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Case/iBer2/iBer_Test_shouYe.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Case/iBer_Test01/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Common/Add_Case_Gather.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Common/Check_port.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Common/Driver_Elements.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Common/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Common/appium_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Common/multi_appium.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Common/multi_device.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Common/testImport.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/logs/logs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/module/iBer/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/module/iBer/Login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/module/iBer/iBerQuan.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/module/iBer/iBerQuan.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/IFRAME.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/IFRAME.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,116 +21,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/iBer$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1561024458603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/iBer$Test_Demo.coverage" NAME="Test_Demo Coverage Results" MODIFIED="1555348021382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/module/iBer2" />
     <SUITE FILE_PATH="coverage/iBer$H5Demo.coverage" NAME="H5Demo Coverage Results" MODIFIED="1555655425778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/FAutoTest/sample" />
     <SUITE FILE_PATH="coverage/iBer$test.coverage" NAME="test Coverage Results" MODIFIED="1554812140323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/module/iBer2" />
+    <SUITE FILE_PATH="coverage/iBer$Unittests_in_Run_Test_py.coverage" NAME="Unittests in Run_Test.py Coverage Results" MODIFIED="1561040268510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../iBer_Python_Interface/iBer_Interface/Test" />
     <SUITE FILE_PATH="coverage/iBer$appium_devices_sync.coverage" NAME="appium_devices_sync Coverage Results" MODIFIED="1553925589377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/Common" />
     <SUITE FILE_PATH="coverage/iBer$Run_Test.coverage" NAME="Run_Test Coverage Results" MODIFIED="1553318134015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/iBer$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1554811193425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/module/iBer2" />
     <SUITE FILE_PATH="coverage/iBer$Unittests_for_test_Test_appium.coverage" NAME="Unittests for test.Test_appium Coverage Results" MODIFIED="1554811887517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/module/iBer2" />
     <SUITE FILE_PATH="coverage/iBer$multi_device.coverage" NAME="multi_device Coverage Results" MODIFIED="1553516472218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/Common" />
+    <SUITE FILE_PATH="coverage/iBer$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1561041116360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/iBer$test_lucky.coverage" NAME="test_lucky Coverage Results" MODIFIED="1556110303729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/module/iBer2" />
     <SUITE FILE_PATH="coverage/iBer$multi_appium.coverage" NAME="multi_appium Coverage Results" MODIFIED="1553148787674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/Common" />
     <SUITE FILE_PATH="coverage/iBer$Unittests_for_test_Test_appium_test_appium_01.coverage" NAME="Unittests for test.Test_appium.test_appium_01 Coverage Results" MODIFIED="1554811218471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/module/iBer2" />
     <SUITE FILE_PATH="coverage/iBer$Login.coverage" NAME="Login Coverage Results" MODIFIED="1555381343998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test/module/iBer2" />
-    <SUITE FILE_PATH="coverage/iBer$appium_devices_sync__1_.coverage" NAME="appium_devices_sync (1) Coverage Results" MODIFIED="1560852160067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/iBer$appium_devices_sync__1_.coverage" NAME="appium_devices_sync (1) Coverage Results" MODIFIED="1561041929645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/module/iBer/shouYe.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/Case/iBer/iBer_Test_shouYe.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/module/iBer/iBerQuan.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#84#115#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Quan.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding>
-                <element signature="e#72#119#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="238">
+              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
               <folding>
                 <element signature="e#72#117#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/Driver_Elements/Driver_Elements.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-              <folding>
-                <element signature="e#67#98#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/log/logs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#81#95#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/device/testImport.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/html/HTMLTestRunner2.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/Run_Tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-              <folding>
-                <element signature="e#100#144#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -190,27 +77,25 @@
       <find>await helpers.push</find>
       <find>helpers.push</find>
       <find>is_element_exist</find>
+      <find>passClass</find>
+      <find>__doc__</find>
+      <find>testcase</find>
+      <find>desc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Login.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Test/Run_Tests.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../iBer_Python_Interface/iBer_Interface/Test/Run_Test.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Test/module/iBer/Login.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Test/Case_Gathers.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Test/Run_Test.py" />
-        <option value="$PROJECT_DIR$/Test/module/Run_Test.py" />
-        <option value="$PROJECT_DIR$/Test/Case2/iBer_Test01/iBer_Test_Login.py" />
-        <option value="$PROJECT_DIR$/Test/module/Run_Tests.py" />
-        <option value="$PROJECT_DIR$/Test/Common/iBer_Test_Login.py" />
-        <option value="$PROJECT_DIR$/Test/Common/Case_Gathers.py" />
-        <option value="$PROJECT_DIR$/Test/Common/desired_caps.yaml" />
-        <option value="$PROJECT_DIR$/Test/Common/appium_devices_sync.py" />
         <option value="$PROJECT_DIR$/Test/Common/multi_appium.py" />
         <option value="$PROJECT_DIR$/Test/appium_devices_sync.py" />
         <option value="$PROJECT_DIR$/Test/logs/logs.py" />
@@ -224,13 +109,10 @@
         <option value="/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/fastAutoTest/core/h5/h5Engine.py" />
         <option value="$PROJECT_DIR$/Test/Case/iBer2/test_iBer_Quan.py" />
         <option value="$PROJECT_DIR$/../README.md" />
-        <option value="$PROJECT_DIR$/docs/IFRAME.md" />
         <option value="$PROJECT_DIR$/docs/APIS.md" />
-        <option value="$PROJECT_DIR$/Test/Case_Gathers.py" />
         <option value="$PROJECT_DIR$/Test/Common/Check_port.py" />
         <option value="$PROJECT_DIR$/Test/module/iBer2/test_lucky.py" />
         <option value="$PROJECT_DIR$/Test/Common/Driver_Elements.py" />
-        <option value="$PROJECT_DIR$/Test/desired_caps.yaml" />
         <option value="$PROJECT_DIR$/Test/module/iBer2/Test_Demo.py" />
         <option value="$PROJECT_DIR$/Test/module/iBer2/iBerQuan.py" />
         <option value="$PROJECT_DIR$/Test/module/iBer2/shouYe.py" />
@@ -248,20 +130,31 @@
         <option value="$PROJECT_DIR$/Common/Add_Case_Gather.py" />
         <option value="$PROJECT_DIR$/Test/Run_Tests.py" />
         <option value="$PROJECT_DIR$/Test/Driver_Elements/Driver_Elements.py" />
-        <option value="$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Login.py" />
-        <option value="$PROJECT_DIR$/Test/module/iBer/Login.py" />
         <option value="$PROJECT_DIR$/Test/module/iBer/shouYe.py" />
         <option value="$PROJECT_DIR$/Test/Case/iBer/iBer_Test_shouYe.py" />
+        <option value="$PROJECT_DIR$/Test/module/Case_together.py" />
+        <option value="$PROJECT_DIR$/case_lucky1.py" />
+        <option value="$PROJECT_DIR$/Test/desired_caps.yaml" />
+        <option value="$PROJECT_DIR$/Test/test2.py" />
         <option value="$PROJECT_DIR$/Test/module/iBer/iBerQuan.py" />
+        <option value="$PROJECT_DIR$/Common/func_instructions.py" />
+        <option value="$PROJECT_DIR$/Test/module/iBer/Login.py" />
+        <option value="$PROJECT_DIR$/Example/verify_environment.py" />
+        <option value="$PROJECT_DIR$/docs/IFRAME.md" />
+        <option value="$PROJECT_DIR$/../../iBer_Python_Interface/iBer_Interface/Test/Case/login.py" />
+        <option value="$PROJECT_DIR$/Common/html/HTMLTestRunner2.py" />
+        <option value="$PROJECT_DIR$/Test/test1.py" />
+        <option value="$PROJECT_DIR$/Test/Case_Gathers.py" />
         <option value="$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Quan.py" />
+        <option value="$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Login.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
-    <option name="y" value="23" />
-    <option name="width" value="1323" />
-    <option name="height" value="770" />
+    <option name="x" value="46" />
+    <option name="y" value="41" />
+    <option name="width" value="1440" />
+    <option name="height" value="831" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -298,6 +191,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -323,74 +217,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.appium_devices_sync (1)">
-    <configuration name="H5Demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="iBer" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/FAutoTest/sample" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/FAutoTest/sample/H5Demo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Login" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="iBer" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/module/iBer2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/module/iBer2/Login.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_Demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="iBer" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test/module/iBer2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/module/iBer2/Test_Demo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="appium_devices_sync (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Run_Tests">
+    <configuration name="Run_Tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="iBer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -404,6 +232,50 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/Run_Tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="iBer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="iBer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/test2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -434,13 +306,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in Run_Test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="iBer_Interface" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../iBer_Python_Interface/iBer_Interface/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/../../iBer_Python_Interface/iBer_Interface/Test/Run_Test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Run_Tests" />
+      <item itemvalue="Python.test1" />
+      <item itemvalue="Python.test2" />
+      <item itemvalue="Python.test_lucky" />
+      <item itemvalue="Python tests.Unittests in Run_Test.py" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.appium_devices_sync (1)" />
+        <item itemvalue="Python.Run_Tests" />
+        <item itemvalue="Python.test1" />
+        <item itemvalue="Python tests.Unittests in Run_Test.py" />
+        <item itemvalue="Python.test2" />
         <item itemvalue="Python.test_lucky" />
-        <item itemvalue="Python.H5Demo" />
-        <item itemvalue="Python.Login" />
-        <item itemvalue="Python.Test_Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -479,17 +373,12 @@
       <workItem from="1555854540966" duration="27768000" />
       <workItem from="1560837508794" duration="312000" />
       <workItem from="1560837980986" duration="1504000" />
-      <workItem from="1560840318647" duration="4391000" />
+      <workItem from="1560840318647" duration="5784000" />
+      <workItem from="1561016926829" duration="17159000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_py - 2019.04.09 at 19h 56m 36s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_py - 2019.04.09 at 19h 57m 09s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_py - 2019.04.09 at 19h 57m 10s.xml">
       <configuration name="Unittests in test.py" configurationId="tests" />
     </history-entry>
@@ -514,19 +403,26 @@
     <history-entry file="Unittests_for_test_Test_appium - 2019.04.09 at 20h 11m 47s.xml">
       <configuration name="Unittests for test.Test_appium" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_Run_Test_py - 2019.06.20 at 21h 56m 34s.xml">
+      <configuration name="Unittests in Run_Test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Run_Test_py - 2019.06.20 at 22h 17m 50s.xml">
+      <configuration name="Unittests in Run_Test.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192178000" />
+    <option name="totallyTimeSpent" value="210730000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="41" width="1323" height="770" extended-state="0" />
+    <frame x="46" y="41" width="1440" height="831" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.264637" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21030043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.07391911" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36283186" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.135318" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6400541" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -538,6 +434,7 @@
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.25169146" />
       <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.42237762" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -545,12 +442,12 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20674157" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20280948" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.07391911" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.17997293" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.07391911" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2013889" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6400541" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -562,11 +459,12 @@
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.25169146" />
       <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.42237762" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,306 +482,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Test/Common/Add_Case_Gather.py" />
-    <entry file="file://$PROJECT_DIR$/Test/Common/appium_config2.py" />
-    <entry file="file://$PROJECT_DIR$/Test/Common/appium_config.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/subprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157">
-          <caret line="333" column="8" selection-start-line="333" selection-start-column="8" selection-end-line="333" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Common/multi_device.py" />
-    <entry file="file://$PROJECT_DIR$/Test/FAutoTest/fastAutoTest/core/common/network/shortLiveWebSocket.py" />
-    <entry file="file://$USER_HOME$/Downloads/wrapeasymonkey/com/whoistester/android/wrapEasyMonkey.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="58" column="32" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/uiautomator/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="477" column="13" selection-start-line="477" selection-start-column="8" selection-end-line="477" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" />
-            <element signature="e#713#755#0" />
-            <element signature="e#953#1097#0" />
-            <element signature="e#1146#2214#0" />
-            <element signature="e#1287#2195#0" />
-            <element signature="e#1325#1385#0" />
-            <element signature="e#1436#1862#0" />
-            <element signature="e#1464#1677#0" />
-            <element signature="e#1531#1677#0" />
-            <element signature="e#1612#1677#0" />
-            <element signature="e#1726#1776#0" />
-            <element signature="e#1921#2195#0" />
-            <element signature="e#1949#2058#0" />
-            <element signature="e#2093#2195#0" />
-            <element signature="e#2253#2453#0" />
-            <element signature="e#2296#2348#0" />
-            <element signature="e#2381#2453#0" />
-            <element signature="e#2490#4471#0" />
-            <element signature="e#2518#2596#0" />
-            <element signature="e#2655#2713#0" />
-            <element signature="e#2764#4321#0" />
-            <element signature="e#3127#3539#0" />
-            <element signature="e#3566#4026#0" />
-            <element signature="e#3613#3931#0" />
-            <element signature="e#3969#4026#0" />
-            <element signature="e#4097#4285#0" />
-            <element signature="e#4349#4471#0" />
-            <element signature="e#4508#4776#0" />
-            <element signature="e#4581#4667#0" />
-            <element signature="e#4712#4776#0" />
-            <element signature="e#4806#8202#0" />
-            <element signature="e#4906#6426#0" />
-            <element signature="e#6578#6830#0" />
-            <element signature="e#6873#7126#0" />
-            <element signature="e#6908#7053#0" />
-            <element signature="e#7166#7338#0" />
-            <element signature="e#7201#7338#0" />
-            <element signature="e#7369#7798#0" />
-            <element signature="e#7383#7511#0" />
-            <element signature="e#7839#7973#0" />
-            <element signature="e#8016#8152#0" />
-            <element signature="e#8257#8324#0" />
-            <element signature="e#8360#8709#0" />
-            <element signature="e#8737#8760#0" />
-            <element signature="e#8787#13359#0" />
-            <element signature="e#8872#9438#0" />
-            <element signature="e#9467#10352#0" />
-            <element signature="e#9506#10322#0" />
-            <element signature="e#9555#9889#0" />
-            <element signature="e#9769#9889#0" />
-            <element signature="e#9924#10285#0" />
-            <element signature="e#10398#10774#0" />
-            <element signature="e#10548#10721#0" />
-            <element signature="e#10814#11113#0" />
-            <element signature="e#11152#11590#0" />
-            <element signature="e#11192#11555#0" />
-            <element signature="e#11257#11474#0" />
-            <element signature="e#11623#12039#0" />
-            <element signature="e#12097#12245#0" />
-            <element signature="e#12283#12638#0" />
-            <element signature="e#12671#12846#0" />
-            <element signature="e#12903#13359#0" />
-            <element signature="e#12992#13299#0" />
-            <element signature="e#13133#13299#0" />
-            <element signature="e#13223#13299#0" />
-            <element signature="e#13437#13873#0" />
-            <element signature="e#13474#13652#0" />
-            <element signature="e#13912#14032#1" />
-            <element signature="e#14066#14145#0" />
-            <element signature="e#14194#14246#0" />
-            <element signature="e#14351#14459#0" />
-            <element signature="e#14749#15534#0" />
-            <element signature="e#15051#15534#0" />
-            <element signature="e#15137#15447#0" />
-            <element signature="e#15199#15354#0" />
-            <element signature="e#15295#15354#0" />
-            <element signature="e#15564#15816#0" />
-            <element signature="e#15663#15771#0" />
-            <element signature="e#15849#16006#0" />
-            <element signature="e#16053#16129#0" />
-            <element signature="e#16176#17863#0" />
-            <element signature="e#16300#17715#0" />
-            <element signature="e#16409#17688#0" />
-            <element signature="e#16656#16902#0" />
-            <element signature="e#16692#16846#0" />
-            <element signature="e#16965#17688#0" />
-            <element signature="e#17023#17135#0" />
-            <element signature="e#17253#17662#0" />
-            <element signature="e#17286#17514#0" />
-            <element signature="e#17898#17984#0" />
-            <element signature="e#18021#18303#0" />
-            <element signature="e#18100#18277#0" />
-            <element signature="e#18385#18593#0" />
-            <element signature="e#18620#18825#0" />
-            <element signature="e#18693#18825#0" />
-            <element signature="e#19022#19064#0" />
-            <element signature="e#19174#19261#0" />
-            <element signature="e#19303#19478#0" />
-            <element signature="e#19523#19599#0" />
-            <element signature="e#19629#20629#0" />
-            <element signature="e#19749#20082#0" />
-            <element signature="e#19793#19877#0" />
-            <element signature="e#19983#20082#0" />
-            <element signature="e#20108#20463#0" />
-            <element signature="e#20253#20463#0" />
-            <element signature="e#20346#20463#0" />
-            <element signature="e#20690#20762#0" />
-            <element signature="e#20809#20886#0" />
-            <element signature="e#20940#21020#0" />
-            <element signature="e#21095#21594#0" />
-            <element signature="e#21136#21574#0" />
-            <element signature="e#21157#21533#0" />
-            <element signature="e#21352#21470#0" />
-            <element signature="e#21408#21470#0" />
-            <element signature="e#21730#21851#0" />
-            <element signature="e#21872#21946#0" />
-            <element signature="e#22054#22245#0" />
-            <element signature="e#22289#22343#0" />
-            <element signature="e#22386#22665#0" />
-            <element signature="e#22709#22783#0" />
-            <element signature="e#22820#22904#0" />
-            <element signature="e#22946#23034#0" />
-            <element signature="e#23092#23147#0" />
-            <element signature="e#23203#23369#0" />
-            <element signature="e#23253#23306#0" />
-            <element signature="e#23426#23533#0" />
-            <element signature="e#23608#24048#0" />
-            <element signature="e#23766#23846#0" />
-            <element signature="e#23903#24025#0" />
-            <element signature="e#24118#24650#0" />
-            <element signature="e#24704#24818#0" />
-            <element signature="e#24869#25221#0" />
-            <element signature="e#24869#25154#1" />
-            <element signature="e#25289#25613#0" />
-            <element signature="e#25381#25546#0" />
-            <element signature="e#25417#25546#0" />
-            <element signature="e#25672#25798#0" />
-            <element signature="e#25844#25933#0" />
-            <element signature="e#25977#26416#0" />
-            <element signature="e#25977#26114#1" />
-            <element signature="e#26224#26395#0" />
-            <element signature="e#26464#26921#0" />
-            <element signature="e#26521#26894#0" />
-            <element signature="e#26555#26741#0" />
-            <element signature="e#26790#26894#0" />
-            <element signature="e#26969#27768#0" />
-            <element signature="e#27024#27742#0" />
-            <element signature="e#27060#27149#0" />
-            <element signature="e#27222#27272#0" />
-            <element signature="e#27331#27521#0" />
-            <element signature="e#27441#27521#0" />
-            <element signature="e#27568#27637#0" />
-            <element signature="e#27682#27742#0" />
-            <element signature="e#27807#28911#0" />
-            <element signature="e#27863#28886#0" />
-            <element signature="e#27899#27920#0" />
-            <element signature="e#27993#28044#0" />
-            <element signature="e#28092#28130#0" />
-            <element signature="e#28186#28257#0" />
-            <element signature="e#28314#28405#0" />
-            <element signature="e#28474#28886#0" />
-            <element signature="e#28782#28856#0" />
-            <element signature="e#28956#29909#0" />
-            <element signature="e#28956#29354#1" />
-            <element signature="e#29399#29606#0" />
-            <element signature="e#29665#29887#0" />
-            <element signature="e#29941#30021#0" />
-            <element signature="e#30052#30131#0" />
-            <element signature="e#30177#31528#0" />
-            <element signature="e#30177#30439#1" />
-            <element signature="e#30511#31502#0" />
-            <element signature="e#30541#30568#0" />
-            <element signature="e#30613#30639#0" />
-            <element signature="e#30697#30925#0" />
-            <element signature="e#30980#31418#0" />
-            <element signature="e#31473#31502#0" />
-            <element signature="e#31572#32421#0" />
-            <element signature="e#31572#31790#1" />
-            <element signature="e#31917#32400#0" />
-            <element signature="e#32463#32556#0" />
-            <element signature="e#32605#33143#0" />
-            <element signature="e#32667#33119#0" />
-            <element signature="e#32697#32742#0" />
-            <element signature="e#32787#32833#0" />
-            <element signature="e#32891#33119#0" />
-            <element signature="e#33412#33510#0" />
-            <element signature="e#33556#33656#0" />
-            <element signature="e#33699#33978#0" />
-            <element signature="e#34022#34094#0" />
-            <element signature="e#34134#34345#0" />
-            <element signature="e#34381#34452#0" />
-            <element signature="e#34497#35360#0" />
-            <element signature="e#34497#34886#1" />
-            <element signature="e#35028#35338#0" />
-            <element signature="e#35410#36813#0" />
-            <element signature="e#35410#35759#1" />
-            <element signature="e#35884#36786#0" />
-            <element signature="e#35955#36125#0" />
-            <element signature="e#36160#36786#0" />
-            <element signature="e#36285#36398#0" />
-            <element signature="e#36473#36586#0" />
-            <element signature="e#36629#36734#0" />
-            <element signature="e#36857#37516#0" />
-            <element signature="e#36857#37084#1" />
-            <element signature="e#37135#37463#0" />
-            <element signature="e#37582#38221#0" />
-            <element signature="e#37582#37800#1" />
-            <element signature="e#37862#38098#0" />
-            <element signature="e#38296#38994#0" />
-            <element signature="e#38296#38527#1" />
-            <element signature="e#38595#38871#0" />
-            <element signature="e#39039#39615#0" />
-            <element signature="e#39039#39242#1" />
-            <element signature="e#39367#39593#0" />
-            <element signature="e#39660#40366#0" />
-            <element signature="e#39660#40009#1" />
-            <element signature="e#40151#40344#0" />
-            <element signature="e#40410#41215#0" />
-            <element signature="e#40410#40615#1" />
-            <element signature="e#40723#41194#0" />
-            <element signature="e#41326#41390#0" />
-            <element signature="e#41431#41571#0" />
-            <element signature="e#41614#41759#0" />
-            <element signature="e#41821#41950#1" />
-            <element signature="e#42002#42063#0" />
-            <element signature="e#42104#42251#0" />
-            <element signature="e#42294#42449#0" />
-            <element signature="e#42553#43062#0" />
-            <element signature="e#42601#42839#0" />
-            <element signature="e#42866#42999#0" />
-            <element signature="e#43123#43646#0" />
-            <element signature="e#43171#43416#0" />
-            <element signature="e#43443#43583#0" />
-            <element signature="e#43705#43858#0" />
-            <element signature="e#43903#43943#0" />
-            <element signature="e#43976#43993#0" />
-            <element signature="e#44037#44326#0" />
-            <element signature="e#44189#44326#0" />
-            <element signature="e#44360#44743#0" />
-            <element signature="e#44433#44720#0" />
-            <element signature="e#44469#44484#0" />
-            <element signature="e#44530#44692#0" />
-            <element signature="e#44784#45004#0" />
-            <element signature="e#44825#44949#0" />
-            <element signature="e#45044#45262#0" />
-            <element signature="e#45084#45208#0" />
-            <element signature="e#45300#45512#0" />
-            <element signature="e#45337#45461#0" />
-            <element signature="e#45552#45764#0" />
-            <element signature="e#45589#45713#0" />
-            <element signature="e#45823#46143#0" />
-            <element signature="e#45973#46122#0" />
-            <element signature="e#46188#47303#0" />
-            <element signature="e#46188#46458#1" />
-            <element signature="e#46746#47280#0" />
-            <element signature="e#47349#49139#0" />
-            <element signature="e#47349#47707#1" />
-            <element signature="e#47772#47909#0" />
-            <element signature="e#47996#48077#0" />
-            <element signature="e#48158#48233#0" />
-            <element signature="e#48292#48365#0" />
-            <element signature="e#48645#49116#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-android-driver/lib/android-helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="462" column="19" lean-forward="true" selection-start-line="461" selection-start-column="16" selection-end-line="462" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-android-driver/build/lib/android-helpers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="949">
@@ -935,11 +533,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Test/Common/Driver_Elements.py" />
+    <entry file="file://$PROJECT_DIR$/Common/logs.py" />
+    <entry file="file://$PROJECT_DIR$/Common/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/logs/logs.py" />
+    <entry file="file://$PROJECT_DIR$/Test/module/iBer/Test_Demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1178">
+          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/module/iBer/iBer_MyCertification.py" />
+    <entry file="file://$PROJECT_DIR$/Test/module/iBer/Product_List.py" />
+    <entry file="file://$PROJECT_DIR$/Test/module/iBer/Test_Driver_Elements.py" />
+    <entry file="file://$PROJECT_DIR$/Test/module/iBer/iBer_MyCertification2.py" />
+    <entry file="file://$PROJECT_DIR$/Test/module/iBer/Customer.py" />
+    <entry file="file://$PROJECT_DIR$/Test/module/iBer/test_lucky.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/module/iBer/Test_H5_iBer.py" />
+    <entry file="file://$PROJECT_DIR$/Test/HTMLTestRunner2.py" />
+    <entry file="file://$PROJECT_DIR$/screenShots/2019-04-24/2019-04-24_20_12_10_写下您的分享心得或者浏览感想，感想支持分享_lucky Feel_content.png" />
+    <entry file="file://$PROJECT_DIR$/screenShots/2019-04-24/2019-04-24_14_22_26_写下您的分享心得或者浏览感想，感想支持分享_lucky Feel_content.png" />
+    <entry file="file://$PROJECT_DIR$/Common/HTMLTestRunner2.py" />
+    <entry file="file://$PROJECT_DIR$/Common/Add_Case_Gather.py" />
+    <entry file="file://$PROJECT_DIR$/Test/Case/iBer/iBer_Test_shouYe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/device/testImport.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/module/Case_together.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <element signature="e#165#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_lucky1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="e#165#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/Run_Tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/log/logs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding>
+            <element signature="e#81#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/module/iBer/shouYe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/IFRAME.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="315">
-            <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <first_editor relative-caret-position="270">
+            <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           </first_editor>
           <second_editor />
         </state>
@@ -955,202 +638,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Common/Driver_Elements.py" />
-    <entry file="file://$PROJECT_DIR$/Common/logs.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/logs/logs.py" />
-    <entry file="file://$PROJECT_DIR$/Test/desired_caps.yaml">
+    <entry file="file://$PROJECT_DIR$/Example/verify_environment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="76">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <folding>
+            <element signature="e#88#116#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/module/iBer/Test_Demo.py">
+    <entry file="file://$PROJECT_DIR$/Test/test2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/module/iBer/iBer_MyCertification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/module/iBer/Product_List.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/module/iBer/Test_Driver_Elements.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/module/iBer/iBer_MyCertification2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/module/iBer/Customer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/module/iBer/test_lucky.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/module/iBer/Test_H5_iBer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state relative-caret-position="595">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/module/iBer/Login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Case_Gathers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="338">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
-            <element signature="e#103#118#0" expanded="true" />
+            <element signature="e#89#124#0" expanded="true" />
+            <element signature="e#508#686#0" />
+            <element signature="e#729#2359#0" />
+            <element signature="e#2403#2422#0" />
+            <element signature="e#2467#4219#0" />
+            <element signature="e#4264#5617#0" />
+            <element signature="e#5648#5679#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/HTMLTestRunner2.py">
+    <entry file="file://$PROJECT_DIR$/../../iBer_Python_Interface/iBer_Interface/Test/Run_Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-246">
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        <state relative-caret-position="855">
+          <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screenShots/2019-04-24/2019-04-24_20_12_10_写下您的分享心得或者浏览感想，感想支持分享_lucky Feel_content.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/Common/func_instructions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screenShots/2019-04-24/2019-04-24_14_22_26_写下您的分享心得或者浏览感想，感想支持分享_lucky Feel_content.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/Test/desired_caps.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/HTMLTestRunner2.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/../../iBer_Python_Interface/iBer_Interface/Test/Case/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="e#38#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/html/HTMLTestRunner2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Add_Case_Gather.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding>
-            <element signature="e#100#129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/device/testImport.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Run_Tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="e#100#144#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/log/logs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#81#95#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="224">
+          <caret line="1104" column="41" lean-forward="true" selection-start-line="1104" selection-start-column="41" selection-end-line="1104" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/Driver_Elements/Driver_Elements.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding>
-            <element signature="e#67#98#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="e#72#117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/module/iBer/Login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/module/iBer/shouYe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Case/iBer/iBer_Test_shouYe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="209">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/module/iBer/iBerQuan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="227">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
-            <element signature="e#84#115#0" expanded="true" />
+            <element signature="e#84#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="36" column="20" selection-end-line="36" selection-end-column="20" />
+          <folding>
+            <element signature="e#102#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/Case_Gathers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding>
+            <element signature="e#102#117#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Quan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="209">
+          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
           <folding>
             <element signature="e#72#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../iBer_Python_Interface/iBer_Interface/Test/Case/Z_Case_collects.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../iBer_Python_Interface/iBer_Interface/Test/Case/Todo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/Case/iBer/iBer_Test_Login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="e#72#117#0" expanded="true" />
           </folding>
         </state>
       </provider>

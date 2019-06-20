@@ -10,6 +10,7 @@ from Common.log.logs import logging
 from time import sleep
 from Test.Driver_Elements.Driver_Elements import Driver_Elements
 import os,yaml
+from Common.func_instructions import instructions
 
 '''
 在module中使用start_screen_record2方法，则需要使用如下此段获取到设备udid
@@ -24,14 +25,12 @@ phone_list = data["phone"]
 class iBer_Login:
 
     def __init__(self,driver):
-        print  "--------------iBer_Login-----------------"
         self.driver = driver
         self.device = Driver_Elements(self.driver)
         self.device.implicitly_Wait(20)  # 测试验证
 
-
+    @instructions.info("进入登录页面")
     def enter_login_page(self):
-        logging.info("enter_login_page-----------------99999-")
         #self.device.isExist_Popwindow(self.driver)
         sleep(13)  # 等待启动页加载完毕
         self.device.swipe_Left()
@@ -69,12 +68,11 @@ class iBer_Login:
         if el_name2:
             el_name2.click()
 
-
+    @instructions.info("返回到首页")
     def back_to_firstPage(self):
         self.device.back(5)
 
-
-
+    @instructions.info("进行危疾分享")
     def enter_WeiJi_share(self):
         sleep(3)
         self.device.swipe_UP(duration = 1000,n = 1)
@@ -118,8 +116,6 @@ class iBer_Login:
 
         self.device.back(7)
         #self.device.startActivity(devices_list[0],"com.iBer.iBerAppV2.MainActivity")
-
-
 
     def login_information(self):
         logging.info("输入登录信息")

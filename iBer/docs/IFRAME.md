@@ -1,4 +1,37 @@
-#Driver_Elements
+# 框架结构
+├── README.md  
+└── iBer  
+    ├── Common  
+    │   ├── device  
+    │   ├── html  
+    │   └── log  
+    ├── Report  
+    ├── Run_logs  
+    ├── appium_log  
+    ├── docs  
+    └── screenShots  
+    ├── Test  
+    │   ├── Case  
+    │   │   ├── iBer  
+    │   │   │   ├── iBer_Test_Login.py  
+    │   │   │   ├── iBer_Test_Quan.py  
+    │   │   └── Test  
+    │   │       └── iBer_Test_Login2.py  
+    │   ├── Driver_Elements  
+    │   │   ├── Driver_Elements.py  
+    │   ├── module  
+    │   │   └── iBer  
+    │   │       ├── Login.py  
+    │   │       ├── iBerQuan.py  
+    │   │   └── Test  
+    │   │       └── iBer_Test_Login2.py  
+    │   ├── Case_Gathers.py  
+    │   ├── desired_caps.yaml  
+    │   ├── Run_Tests.py  
+
+# 框架编写注意点
+
+## Driver_Elements
     #---接口层
     
     新增common方法必填信息，备注要求
